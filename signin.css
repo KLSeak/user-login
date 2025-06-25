@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('image/bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 100%;
+}
+.container > h1{
+    text-align: center;
+    padding: 4% 0%;
+}
+.login{
+    margin: auto;
+    max-width: 38%;
+    height: 69vh;
+    background-color: rgba(255, 255, 255, 0.633);
+    padding: 50px 50px;
+    border: none solid;
+    border-radius: 15px;
+}
+.fill{
+    padding: 10px 0px;
+}
+label{
+    font-size: 20px;
+    padding: 5px 0px;
+}
+input{
+    width: 100%;
+    padding: 10px 8px;
+    margin: 5px 0px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.21);
+}
+.fill > button{
+    width: 140px;
+    height: 40px;
+    border: 0px solid;
+    background-color: #000080cf;
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    transition: all 0.2s linear;
+}
+.fill > button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.fill > p{
+    text-align: center;
+    padding: 5px 0px;
+}
+/* --- Media Queries for Sign-in Form --- */
+
+/* For screens smaller than or equal to 768px (common for tablets and smaller laptops) */
+@media (max-width: 768px) {
+    .login {
+      max-width: 65%; /* Make the form wider on tablets to accommodate more fields */
+      padding: 35px 30px; /* Adjust padding */
+      height: auto; /* Allow height to adjust based on content to prevent overflow */
+    }
+  
+    .container > h1 {
+      padding: 7% 0%; /* Increase top/bottom padding for heading */
+      font-size: 2em; /* Adjust heading size */
+    }
+  
+    label {
+      font-size: 18px; /* Slightly reduce label font size */
+    }
+  
+    input {
+      padding: 9px 7px; /* Adjust input padding */
+    }
+  
+    .fill > button {
+      width: 130px; /* Slightly reduce button width */
+      height: 35px; /* Slightly reduce button height */
+      font-size: 13.5px; /* Slightly adjust button font size */
+    }
+  }
+  
+  /* For screens smaller than or equal to 480px (common for mobile phones) */
+  @media (max-width: 480px) {
+    body {
+      background-position: center center; /* Center background image on mobile */
+    }
+  
+    .container > h1 {
+      padding: 12% 0%; /* More padding for heading on very small screens */
+      font-size: 1.8em;
+    }
+  
+    .login {
+      max-width: 90%; /* Make the form nearly full width on mobile */
+      height: auto; /* Ensure height adjusts */
+      padding: 25px 20px; /* Reduce padding significantly */
+    }
+  
+    label {
+      font-size: 16px; /* Further reduce label font size */
+    }
+  
+    input {
+      padding: 7px 5px; /* Further reduce input padding */
+    }
+  
+    .fill > button {
+      width: 100%; /* Make button full width for easy tapping */
+      height: 40px; /* Keep button height reasonable */
+      font-size: 14px;
+      margin-top: 10px; /* Add some space above the button */
+    }
+  
+    .fill > p {
+      font-size: 0.9em; /* Reduce paragraph font size */
+    }
+  }
